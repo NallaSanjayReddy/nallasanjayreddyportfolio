@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom Properties, update these for your own design */
+
+:root {
+    --clr-accent: #16e0bd;
+    --clr-dark: #303030;
+    --clr-light: #fff;
+    --ff-primary: "Source Sans Pro", sans-serif;
+    --ff-secondary: "Source Code Pro", monospace;
+    --fs-body: 1rem;
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fw-bold: 900;
+    --fw-reg: 300;
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-body: 1.125rem;
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+    }
+}
+
+/* General styles */
+
+body {
+    margin: 0;
+
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+
+    color: var(--clr-dark);
+    background: var(--clr-light);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    margin: 0;
+
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+h2 {
+    font-size: var(--fs-h2);
+}
+h3 {
+    font-size: var(--fs-h3);
+}
